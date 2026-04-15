@@ -1,0 +1,61 @@
+lockfileVersion: '9.0'
+
+settings:
+  autoInstallPeers: true
+  excludeLinksFromLockfile: false
+
+importers:
+
+  .:
+    dependencies:
+      '@ramz001-cinema/core':
+        specifier: ^1.0.7
+        version: 1.0.7(prettier@3.8.3)
+      '@types/node':
+        specifier: ^25.6.0
+        version: 25.6.0
+      prettier:
+        specifier: ^3.8.3
+        version: 3.8.3
+      typescript:
+        specifier: ^6.0.2
+        version: 6.0.2
+
+packages:
+
+  '@ramz001-cinema/core@1.0.7':
+    resolution: {integrity: sha512-3lkWK5CX+paDvjjKpo0cfS7Q3FtRjf0nrBX2l/WRWAjJ/ksgYx5x9JYhA6JlhYmdsoqehDFvo7TEreStEU0YQA==}
+    peerDependencies:
+      prettier: ^3.8.1
+
+  '@types/node@25.6.0':
+    resolution: {integrity: sha512-+qIYRKdNYJwY3vRCZMdJbPLJAtGjQBudzZzdzwQYkEPQd+PJGixUL5QfvCLDaULoLv+RhT3LDkwEfKaAkgSmNQ==}
+
+  prettier@3.8.3:
+    resolution: {integrity: sha512-7igPTM53cGHMW8xWuVTydi2KO233VFiTNyF5hLJqpilHfmn8C8gPf+PS7dUT64YcXFbiMGZxS9pCSxL/Dxm/Jw==}
+    engines: {node: '>=14'}
+    hasBin: true
+
+  typescript@6.0.2:
+    resolution: {integrity: sha512-bGdAIrZ0wiGDo5l8c++HWtbaNCWTS4UTv7RaTH/ThVIgjkveJt83m74bBHMJkuCbslY8ixgLBVZJIOiQlQTjfQ==}
+    engines: {node: '>=14.17'}
+    hasBin: true
+
+  undici-types@7.19.2:
+    resolution: {integrity: sha512-qYVnV5OEm2AW8cJMCpdV20CDyaN3g0AjDlOGf1OW4iaDEx8MwdtChUp4zu4H0VP3nDRF/8RKWH+IPp9uW0YGZg==}
+
+snapshots:
+
+  '@ramz001-cinema/core@1.0.7(prettier@3.8.3)':
+    dependencies:
+      prettier: 3.8.3
+
+  '@types/node@25.6.0':
+    dependencies:
+      undici-types: 7.19.2
+
+  prettier@3.8.3: {}
+
+  typescript@6.0.2: {}
+
+  undici-types@7.19.2: {}
