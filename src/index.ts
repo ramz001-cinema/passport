@@ -58,8 +58,35 @@ function generateToken(secretKey: string, user: string, ttl: number) {
 	return `${userPart}.${iatPart}.${expPart}.${mac}`
 }
 
-console.log('Passport Token Auth - Version 1.0.0')
+function verifyToken(secretKey: string, token: string) {
+	const parts = token.split('.')
+	if (parts.length !== 4) return { valid: false, reason: 'Invalid format' }
+
+	const [userPart, iatPart, expPart, mac] = parts
+
+	const serialized = serialize(userPart, iatPart, expPart)
+	const expectedMac = computeHmac(secretKey, serialized)
+
+	if (!constantTimeEqual(mac, expectedMac))
+		return { valid: false, reason: 'Invalid signature' }
+
+	const expNumber = Number(base64UrlDecode(expPart))
+
+	if (!Number.isFinite(expNumber)) return { valid: false, reason: 'Error' }
+	if (now() > expNumber) return { valid: false, reason: 'Expired' }
+
+	return { valid: true, userId: base64UrlDecode(userPart) }
+}
+
 console.log(
 	'generated Token:',
 	generateToken('123456789abcdef', 'user123', 3600)
+)
+// generated Token: dXNlcjEyMw.MTc3NjUwNTYyNw.MTc3NjUwOTIyNw.ea058a9a68586f54f49505ad1440abdbeb37b22ccc2c25a70c039e61cc33c7ee
+console.log(
+	'Verifying Token:',
+	verifyToken(
+		'123456789abcdef',
+		'dXNlcjEyMw.MTc3NjUwNTYyNw.MTc3NjUwOTIyNw.ea058a9a68586f54f49505ad1440abdbeb37b22ccc2c25a70c039e61cc33c7ee'
+	)
 )
