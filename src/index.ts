@@ -10,3 +10,18 @@ function base64UrlEncode(buf: Buffer | string) {
 		.replace(/\//g, '_')
 		.replace(/=+$/, '')
 }
+
+function base64UrlDecode(str: string) {
+	str = str.replace(/-/g, '+').replace(/_/g, '/')
+
+	while (str.length % 4) {
+		str += '='
+	}
+
+	return Buffer.from(str, 'base64').toString()
+}
+
+function constantTimeEqual(a: string, b: string) {
+	const bufA = Buffer.from(a)
+	const bufB = Buffer.from(b)
+}
