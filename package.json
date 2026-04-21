@@ -19,10 +19,14 @@
 	"license": "ISC",
 	"packageManager": "pnpm@10.32.1",
 	"dependencies": {
+		"@nestjs/common": "^11.1.19",
+		"@nestjs/core": "^11.1.19",
 		"@ramz001-cinema/core": "^1.0.7",
 		"@types/node": "^25.6.0",
 		"jest": "^30.3.0",
 		"prettier": "^3.8.3",
-		"typescript": "^6.0.2"
+		"reflect-metadata": "^0.2.2",
+		"rxjs": "^7.8.2",
+		"typescript": "^6.0.3"
 	}
 }
