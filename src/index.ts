@@ -1,3 +1,7 @@
-export * from './interfaces'
-export * from './passport.module'
-export * from './passport.service'
+export {
+	PassportAsyncOptions,
+	PassportOptions,
+	TokenPayload
+} from './interfaces'
+export { PassportModule } from './passport.module'
+export { PassportService } from './passport.service'
