@@ -1,6 +1,6 @@
 {
 	"name": "@ramz001-cinema/passport",
-	"version": "1.0.0",
+	"version": "1.0.1",
 	"description": "A package for handling generation and verifications of authentication tokens.",
 	"type": "module",
 	"main": "dist/index.js",
@@ -16,6 +16,13 @@
 		"format": "prettier --write \"src/**/*.ts\"",
 		"start": "node src/index.ts",
 		"build": "tsc"
+	},
+	"exports": {
+		".": {
+			"types": "./dist/index.d.ts",
+			"import": "./dist/index.js",
+			"default": "./dist/index.js"
+		}
 	},
 	"keywords": [
 		"authentication",
