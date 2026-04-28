@@ -33,11 +33,11 @@ export class PassportService {
 		return createHmac('sha256', this.SECRET_KEY).update(data).digest('hex')
 	}
 
-	generate(user: string, ttl: number): string {
+	generate(userId: string, ttl: number): string {
 		const issuedAt = this.now()
 		const expiresAt = issuedAt + ttl
 
-		const userPart = base64UrlEncode(user)
+		const userPart = base64UrlEncode(userId)
 		const iatPart = base64UrlEncode(issuedAt.toString())
 		const expPart = base64UrlEncode(expiresAt.toString())
 
@@ -64,7 +64,7 @@ export class PassportService {
 
 		if (!Number.isFinite(expNumber))
 			return { valid: false, reason: ERROR_MESSAGES.TOKEN_ERROR }
-		
+
 		if (this.now() > expNumber)
 			return { valid: false, reason: ERROR_MESSAGES.EXPIRED_TOKEN }
 

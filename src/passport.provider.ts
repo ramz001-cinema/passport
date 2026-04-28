@@ -32,4 +32,5 @@ export function createPassportAsyncOptionsProvider(
 		inject: options.inject || []
 	}
 }
-{}
+{
+}
