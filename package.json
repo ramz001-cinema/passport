@@ -1,6 +1,6 @@
 {
 	"name": "@ramz001-cinema/passport",
-	"version": "1.0.4",
+	"version": "1.0.5",
 	"description": "A package for handling generation and verifications of authentication tokens.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -27,14 +27,14 @@
 	"license": "MIT",
 	"packageManager": "pnpm@10.32.1",
 	"dependencies": {
-		"@nestjs/common": "^11.1.19",
-		"@nestjs/core": "^11.1.19",
+		"@nestjs/common": "^11.1.28",
+		"@nestjs/core": "^11.1.28",
 		"@ramz001-cinema/core": "^1.0.7",
-		"@types/node": "^25.6.0",
-		"jest": "^30.3.0",
-		"prettier": "^3.8.3",
+		"@types/node": "^26.1.2",
+		"jest": "^30.4.2",
+		"prettier": "^3.9.6",
 		"reflect-metadata": "^0.2.2",
 		"rxjs": "^7.8.2",
-		"typescript": "^6.0.3"
+		"typescript": "^7.0.2"
 	}
 }
