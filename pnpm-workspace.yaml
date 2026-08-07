@@ -1,5 +1,9 @@
 allowBuilds:
   '@nestjs/core': true
   unrs-resolver: true
+minimumReleaseAgeExclude:
+  - '@ramz001-cinema/contracts'
+  - '@ramz001-cinema/passport'
+  - '@ramz001-cinema/core'
 overrides:
   brace-expansion@<=5.0.7: '>=5.0.8'
