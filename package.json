@@ -1,6 +1,6 @@
 {
 	"name": "@ramz001-cinema/passport",
-	"version": "1.0.5",
+	"version": "1.0.6",
 	"description": "A package for handling generation and verifications of authentication tokens.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
