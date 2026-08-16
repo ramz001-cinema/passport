@@ -1,6 +1,6 @@
 {
 	"name": "@ramz001-cinema/passport",
-	"version": "1.0.6",
+	"version": "1.0.7",
 	"description": "A package for handling generation and verifications of authentication tokens.",
 	"main": "dist/index.js",
 	"types": "dist/index.d.ts",
@@ -29,7 +29,7 @@
 	"dependencies": {
 		"@nestjs/common": "^11.2.1",
 		"@nestjs/core": "^11.2.1",
-		"@ramz001-cinema/core": "^1.2.2",
+		"@ramz001-cinema/core": "^1.2.3",
 		"@types/node": "^26.2.0",
 		"jest": "^30.4.2",
 		"reflect-metadata": "^0.2.2",

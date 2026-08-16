@@ -18,8 +18,8 @@ importers:
         specifier: ^11.2.1
         version: 11.2.1(@nestjs/common@11.2.1(reflect-metadata@0.2.2)(rxjs@7.8.2))(reflect-metadata@0.2.2)(rxjs@7.8.2)
       '@ramz001-cinema/core':
-        specifier: ^1.2.2
-        version: 1.2.2(@eslint/js@10.0.1(eslint@10.8.1))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1))(eslint@10.8.1)(prettier@3.9.6))(eslint@10.8.1)(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1)(typescript@6.0.3))
+        specifier: ^1.2.3
+        version: 1.2.3(@eslint/js@10.0.1(eslint@10.8.1))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1))(eslint@10.8.1)(prettier@3.9.6))(eslint@10.8.1)(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1)(typescript@6.0.3))
       '@types/node':
         specifier: ^26.2.0
         version: 26.2.0
@@ -444,8 +444,8 @@ packages:
     resolution: {integrity: sha512-SEeaJLb3qBNF/OaXnaR1NmmBbFYk1zC0ZH/52fATcRPLFg/p791YrcyFFy44Bo9sLaGuSuLp5Q6axbb/O+v/RA==}
     engines: {node: ^14.18.0 || >=16.0.0}
 
-  '@ramz001-cinema/core@1.2.2':
-    resolution: {integrity: sha512-JpCXSFQg5jxD5RvI774J7KCRvs0G0lQF2kdYKxW7WKEoUafQqg52JPH9TJupfYu2EaxLJKbR7fTiSkd8gX5abg==}
+  '@ramz001-cinema/core@1.2.3':
+    resolution: {integrity: sha512-9oJ4Y3mEuCJgOikLpSUyqadnlYGbbrVbPSCRfV7qVA0Bm3ogDYR9DlrM4/gbcIMMJSEDG0iTyRvuMpOXZ3Nzbw==}
     peerDependencies:
       '@eslint/js': ^10.0.1
       eslint: ^10.8.0
@@ -2267,7 +2267,7 @@ snapshots:
 
   '@pkgr/core@0.3.6': {}
 
-  '@ramz001-cinema/core@1.2.2(@eslint/js@10.0.1(eslint@10.8.1))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1))(eslint@10.8.1)(prettier@3.9.6))(eslint@10.8.1)(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1)(typescript@6.0.3))':
+  '@ramz001-cinema/core@1.2.3(@eslint/js@10.0.1(eslint@10.8.1))(eslint-plugin-prettier@5.5.6(eslint-config-prettier@10.1.8(eslint@10.8.1))(eslint@10.8.1)(prettier@3.9.6))(eslint@10.8.1)(globals@17.9.0)(prettier@3.9.6)(typescript-eslint@8.66.0(eslint@10.8.1)(typescript@6.0.3))':
     dependencies:
       '@eslint/js': 10.0.1(eslint@10.8.1)
       eslint: 10.8.1
